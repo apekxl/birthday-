@@ -1,1 +1,122 @@
+body {
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
 
+.container {
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  max-width: 450px;
+  width: 85%;
+  border: 1px solid #333;
+}
+
+h1 {
+  color: #ff4081;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.text-utama {
+  font-size: 22px;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+
+.butang-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Kunci saiz kedudukan Button 1 */
+.kunci-btn1 {
+  width: 120px;
+  height: 45px;
+}
+
+/* Tapak asal Button 2 */
+.wrapper-tapak {
+  width: 120px;
+  height: 45px;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ff4081;
+  color: white;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #ff1744;
+}
+
+/* Khas untuk Button 2 bila terlepas lari */
+.is-running {
+  position: fixed !important;
+  width: 120px !important;
+  height: 45px !important;
+  z-index: 999;
+}
+
+.sorok {
+  display: none !important;
+}
+
+/* POP-UP EMOJI 🥺 DESIGN */
+#popup-emoji {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#popup-emoji.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup-content {
+  background-color: #1e1e1e;
+  padding: 30px 50px;
+  border-radius: 20px;
+  border: 2px solid #ff4081;
+  transform: scale(0.5);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#popup-emoji.show .popup-content {
+  transform: scale(1);
+}
+
+.emoji-big {
+  font-size: 100px;
+}
