@@ -35,12 +35,10 @@ btnLariList.forEach(butang => {
 
 document.getElementById('p1-btn1').addEventListener('click', function() {
   tukarPage('page-1', 'page-2');
-  
-  // Mula mainkan lagu
   const audio = document.getElementById('bg-music');
   if (audio) {
     audio.play().catch(error => {
-      console.log("Autoplay dihalang oleh browser:", error);
+      console.log("Autoplay dihalang", error);
     });
   }
 });
