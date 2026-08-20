@@ -40,13 +40,11 @@ h1 {
   gap: 15px;
 }
 
-/* Kunci saiz kedudukan Button 1 */
 .kunci-btn1 {
   width: 120px;
   height: 45px;
 }
 
-/* Tapak asal Button 2 */
 .wrapper-tapak {
   width: 120px;
   height: 45px;
@@ -70,7 +68,6 @@ button:hover {
   background-color: #ff1744;
 }
 
-/* Khas untuk Button 2 bila terlepas lari */
 .is-running {
   position: fixed !important;
   width: 120px !important;
@@ -82,7 +79,6 @@ button:hover {
   display: none !important;
 }
 
-/* POP-UP EMOJI 🥺 DESIGN */
 #popup-emoji {
   position: fixed;
   top: 0;
